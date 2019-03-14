@@ -6,6 +6,13 @@ logger.debug("Render starts");
 
 java -Xmx512m -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n -jar cq5-author-p4502.jar
 
+AEM Timeline Activity Stream 
+
+Timeline data comes from 
+
+/var/audit/com.day.cq.dam/content/dam
+https://helpx.adobe.com/experience-manager/6-3/assets/using/activity-stream.html
+
 ====================
 ## windows powershell
 
