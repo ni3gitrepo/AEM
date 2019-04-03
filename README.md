@@ -13,6 +13,17 @@ Timeline data comes from
 /var/audit/com.day.cq.dam/content/dam
 https://helpx.adobe.com/experience-manager/6-3/assets/using/activity-stream.html
 
+enable - Day CQ DAM Event Recorder
+Enable - set isEnabled.name = true in DAM Asset Home Page Feature Flag
+https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-home-page.html
+https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/user-properties.html
+
+dam ASSET expiration date
+
+./jcr:content/metadata/prism:expirationDate
+
+
+
 ====================
 ## windows powershell
 
