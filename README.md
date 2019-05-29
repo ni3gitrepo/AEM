@@ -86,9 +86,10 @@ npm install typings --global
 typings install dt~jquery --global
 <reference path="../typings/globals/jquery/index.d.ts" />
 
-=====================
+
 dam/gui/coral/components/admin/schemaforms/formbuilder/sectionfield
 ============================================= Chrome Dev Tools
+##Chrome Dev Tools
 Shift + Enter => allow you to write multi line text in console
 Logpoint ???
 Live Expression ??
