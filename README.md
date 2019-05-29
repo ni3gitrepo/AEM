@@ -83,7 +83,7 @@ $ light-server
 JQUERY INSTALLATION
 npm install tsd -g
 npm install typings --global
-typings install dt~jquery --global
+npm install --save @types/jquery
 <reference path="../typings/globals/jquery/index.d.ts" />
 
 
