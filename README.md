@@ -79,6 +79,12 @@ $ http-server
 $ npm install -g light-server 
 $ light-server
 
+## VSCODE
+JQUERY INSTALLATION
+npm install tsd -g
+npm install typings --global
+typings install dt~jquery --global
+<reference path="../typings/globals/jquery/index.d.ts" />
 
 =====================
 dam/gui/coral/components/admin/schemaforms/formbuilder/sectionfield
