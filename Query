@@ -1,0 +1,10 @@
+http://www.adobe.com.by/pdf/meetup-3/QueryBuilder_and_Custom_Predicates.pdf
+
+http://localhost:4502/libs/cq/search/content/querydebug.htm
+type=dam:assets
+path=/content/dam/aetna
+group.1_daterange.property=prism:expirationDate
+group.1_daterange.lowerBound=2019-08-14
+group.1_daterange.lowerOperation=>=
+group.1_daterange.upperBound=2019-08-16
+group.1_daterange.upperOperation=<=
