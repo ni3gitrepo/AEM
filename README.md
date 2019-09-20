@@ -6,25 +6,37 @@ logger.debug("Render starts");
 
 java -Xmx512m -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n -jar cq5-author-p4502.jar
 
-AEM Timeline Activity Stream 
+ *AEM Timeline Activity Stream* 
 
 Timeline data comes from 
 
 /var/audit/com.day.cq.dam/content/dam
 https://helpx.adobe.com/experience-manager/6-3/assets/using/activity-stream.html
 
+*DAM Event Recorder*
 enable - Day CQ DAM Event Recorder
 Enable - set isEnabled.name = true in DAM Asset Home Page Feature Flag
 https://helpx.adobe.com/experience-manager/6-4/assets/using/assets-home-page.html
 https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/user-properties.html
 
-dam ASSET expiration date
+ *Dam ASSET expiration date*
 
 ./jcr:content/metadata/prism:expirationDate
 
+#### Clean Cache ####
+
+- Go to http://localhost:6502/system/console/fsclassloader and click "clear class loader" (top right).
+
+- By default, clientlibs cache is now stored in crx-quickstart/launchpad/felix/bundle<clientlibs-BundleID (com.adobe.granite.ui.clientlibs)>/data/outputcache. Clear the outputcache folder.
+
+- Stop and start bundle org.apache.sling.commons.fsclassloader
+- Clean client libs
+http://localhost:4565/libs/granite/ui/content/dumplibs.rebuild.html
 
 
-====================
+
+
+=========================================================================
 ## windows powershell
 
 get-help cmdlets or cmdlets -?(get-help get-content) or (get-content - ?)
