@@ -33,6 +33,13 @@ https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/user-proper
 - Clean client libs
 http://localhost:4565/libs/granite/ui/content/dumplibs.rebuild.html
 
+==> To Open pdf to review purpose
+disable content disposition filter from configuration
+https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/content-disposition-filter.html
+
+==> touch ui - customization
+https://medium.com/@theopendle/aem-adding-a-touchui-quick-action-to-asset-cards-910b09d499d2
+
 
 
 
