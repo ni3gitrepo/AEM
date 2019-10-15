@@ -4,6 +4,24 @@ logger.debug("Render starts");
 
 ## AEM
 
+# Customize Text Field
+1. overlay 
+libs/granite/ui/components/coral/foundation/form/textfield/render.jsp
+
+if (fieldName != null)
+		{
+
+			if(fieldName.contains(JcrConstants.JCR_CREATED_BY) || fieldName.contains(JcrConstants.JCR_LAST_MODIFIED_BY) ){
+				String fieldVal = vm.get("value", String.class);
+				if (fieldVal != null) {
+
+					com.aetna.chs.marketingdam.services.CHSUsernameService nameService = sling.getService(com.aetna.chs.marketingdam.services.CHSUsernameService.class);
+					fieldUserName = nameService.getUserName(fieldVal);
+
+				}
+
+#============================================
+
 java -Xmx512m -agentlib:jdwp=transport=dt_socket,address=30303,server=y,suspend=n -jar cq5-author-p4502.jar
 
  *AEM Timeline Activity Stream* 
